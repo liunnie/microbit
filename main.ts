@@ -50,7 +50,7 @@ input.onButtonPressed(Button.AB, function () {
     music.playTone(262, music.beat(BeatFraction.Half))
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showNumber(0.23 * steps)
+    basic.showNumber(0.04 * steps)
     basic.showString("kcal")
     basic.showLeds(`
         . . # . .
@@ -59,6 +59,7 @@ input.onButtonPressed(Button.B, function () {
         # . . . #
         . # # # .
         `)
+    music.playSoundEffect(music.createSoundEffect(WaveShape.Sine, 5000, 0, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
 })
 let steps = 0
 steps = 0
