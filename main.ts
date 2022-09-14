@@ -25,7 +25,7 @@ input.onButtonPressed(Button.A, function () {
             . # # # .
             . # # # .
             `)
-        basic.showString("HURRY UP")
+        basic.showString("EXCELLENT")
     } else {
         basic.showLeds(`
             . . . . .
@@ -59,7 +59,6 @@ input.onButtonPressed(Button.B, function () {
         # . . . #
         . # # # .
         `)
-    music.playSoundEffect(music.createSoundEffect(WaveShape.Sine, 5000, 0, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
 })
 let steps = 0
 steps = 0
